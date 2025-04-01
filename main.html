@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FURN - Premium Furniture Store</title>
+  <meta name="description" content="Shop premium furniture and home decor">
+  <meta name="author" content="FURN">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <a href="index.html" class="logo">
+            <div class="logo-box">
+              <span class="logo-text">F<br>U</span>
+              <span class="logo-text">R<br>N</span>
+            </div>
+          </a>
+          
+          <nav class="main-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Product</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="page.html" class="nav-link">Page</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+        </div>
+        
+        <div class="header-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search products" class="search-input">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+          
+          <a href="account.html" class="account-link">My Account</a>
+          
+          <a href="cart.html" class="cart-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cart-icon"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span class="cart-count">3</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content animate-fade delay-1">
+          <h1 class="hero-title">CATEGORIES</h1>
+          <div class="breadcrumb">
+            <a href="index.html" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">Categories</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+      <div class="container">
+        <div class="section-header animate-fade delay-1">
+          <h2 class="section-title">SHOP WITH US</h2>
+          <p class="section-description">Browse from 230 latest items</p>
+        </div>
+        
+        <div class="products-layout">
+          <!-- Filter Sidebar -->
+          <div class="filters animate-fade delay-2">
+            <div class="filters-sticky">
+              <div class="filters-header">
+                <div class="filters-title">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="filter-icon"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                  <span>Filter Product</span>
+                </div>
+              </div>
+              
+              <div class="filters-box">
+                <!-- Type Filter -->
+                <div class="filter-section">
+                  <button class="filter-toggle">
+                    <span class="filter-name">Type</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                  </button>
+                  
+                  <div class="filter-options">
+                    <div class="filter-option">
+                      <input type="checkbox" id="sofa" class="filter-checkbox">
+                      <label for="sofa" class="filter-label">Sofa</label>
+                    </div>
+                    <div class="filter-option">
+                      <input type="checkbox" id="armchair" class="filter-checkbox">
+                      <label for="armchair" class="filter-label">Armchair</label>
+                    </div>
+                    <div class="filter-option">
+                      <input type="checkbox" id="loveseat" class="filter-checkbox">
+                      <label for="loveseat" class="filter-label">Loveseat</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Size Filter -->
+                <div class="filter-section">
+                  <button class="filter-toggle">
+                    <span class="filter-name">Size</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                  </button>
+                  
+                  <div class="filter-options hidden">
+                    <div class="filter-option">
+                      <input type="checkbox" id="small" class="filter-checkbox">
+                      <label for="small" class="filter-label">Small</label>
+                    </div>
+                    <div class="filter-option">
+                      <input type="checkbox" id="medium" class="filter-checkbox">
+                      <label for="medium" class="filter-label">Medium</label>
+                    </div>
+                    <div class="filter-option">
+                      <input type="checkbox" id="large" class="filter-checkbox">
+                      <label for="large" class="filter-label">Large</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Color Filter -->
+                <div class="filter-section">
+                  <button class="filter-toggle">
+                    <span class="filter-name">Color</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                  </button>
+                  
+                  <div class="filter-options hidden">
+                    <div class="filter-option">
+                      <input type="checkbox" id="brown" class="filter-checkbox">
+                      <label for="brown" class="filter-label">Brown</label>
+                    </div>
+                    <div class="filter-option">
+                      <input type="checkbox" id="gray" class="filter-checkbox">
+                      <label for="gray" class="filter-label">Gray</label>
+                    </div>
+                    <div class="filter-option">
+                      <input type="checkbox" id="beige" class="filter-checkbox">
+                      <label for="beige" class="filter-label">Beige</label>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Price Range Filter -->
+                <div class="filter-section">
+                  <button class="filter-toggle">
+                    <span class="filter-name">Price Range</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                  </button>
+                  
+                  <div class="filter-options hidden">
+                    <div class="price-range">
+                      <div class="price-input">
+                        <span class="price-currency">$</span>
+                        <input type="number" placeholder="0" class="price-value">
+                      </div>
+                      <span class="price-separator">to</span>
+                      <div class="price-input">
+                        <span class="price-currency">$</span>
+                        <input type="number" placeholder="500" class="price-value">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Latest Product Filter -->
+              <div class="latest-filter">
+                <h3 class="latest-filter-title">Latest Product</h3>
+                
+                <div class="latest-options">
+                  <div class="latest-option">
+                    <input type="radio" name="latest" id="any" class="latest-radio" checked>
+                    <label for="any" class="latest-label">Any</label>
+                  </div>
+                  <div class="latest-option">
+                    <input type="radio" name="latest" id="today" class="latest-radio">
+                    <label for="today" class="latest-label">Today</label>
+                  </div>
+                  <div class="latest-option">
+                    <input type="radio" name="latest" id="last2days" class="latest-radio">
+                    <label for="last2days" class="latest-label">Last 2 days</label>
+                  </div>
+                  <div class="latest-option">
+                    <input type="radio" name="latest" id="last5days" class="latest-radio">
+                    <label for="last5days" class="latest-label">Last 5 days</label>
+                  </div>
+                  <div class="latest-option">
+                    <input type="radio" name="latest" id="last10days" class="latest-radio">
+                    <label for="last10days" class="latest-label">Last 10 days</label>
+                  </div>
+                  <div class="latest-option">
+                    <input type="radio" name="latest" id="last15days" class="latest-radio">
+                    <label for="last15days" class="latest-label">Last 15 days</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Product Grid -->
+          <div class="product-grid">
+            <div class="product-controls animate-fade delay-2">
+              <div class="product-count">
+                <p>39,782 Product found</p>
+              </div>
+              
+              <div class="product-sort">
+                <span>Sort by</span>
+                <select class="sort-select">
+                  <option>Sofa</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                  <option>Newest</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="product-list">
+              <!-- Product 1 -->
+              <div class="product-card animate-fade delay-2">
+                <a href="product/1.html" class="product-link">
+                  <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="Furniture" class="product-image">
+                  </div>
+                  
+                  <div class="product-info">
+                    <h3 class="product-name">Rly Microfiber / Microsuede 56" Armless Loveseat</h3>
+                    <div class="product-price">
+                      <span>$367</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Product 2 -->
+              <div class="product-card animate-fade delay-2">
+                <a href="product/2.html" class="product-link">
+                  <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80" alt="Furniture" class="product-image">
+                  </div>
+                  
+                  <div class="product-info">
+                    <h3 class="product-name">Rly Microfiber / Microsuede 56" Armless Loveseat</h3>
+                    <div class="product-price">
+                      <span>$367</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="product-card animate-fade delay-3">
+                <a href="product/3.html" class="product-link">
+                  <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="Furniture" class="product-image">
+                  </div>
+                  
+                  <div class="product-info">
+                    <h3 class="product-name">Rly Microfiber / Microsuede 56" Armless Loveseat</h3>
+                    <div class="product-price">
+                      <span>$367</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="product-card animate-fade delay-3">
+                <a href="product/4.html" class="product-link">
+                  <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" alt="Furniture" class="product-image">
+                  </div>
+                  
+                  <div class="product-info">
+                    <h3 class="product-name">Rly Microfiber / Microsuede 56" Armless Loveseat</h3>
+                    <div class="product-price">
+                      <span>$367</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Product 5 -->
+              <div class="product-card animate-fade delay-3">
+                <a href="product/5.html" class="product-link">
+                  <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1158&q=80" alt="Furniture" class="product-image">
+                  </div>
+                  
+                  <div class="product-info">
+                    <h3 class="product-name">Rly Microfiber / Microsuede 56" Armless Loveseat</h3>
+                    <div class="product-price">
+                      <span>$367</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Product 6 -->
+              <div class="product-card animate-fade delay-4">
+                <a href="product/6.html" class="product-link">
+                  <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Furniture" class="product-image">
+                  </div>
+                  
+                  <div class="product-info">
+                    <h3 class="product-name">Rly Microfiber / Microsuede 56" Armless Loveseat</h3>
+                    <div class="product-price">
+                      <span>$367</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <div class="browse-more animate-fade delay-4">
+              <button class="browse-button">BROWSE MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature animate-fade delay-1">
+            <div class="feature-icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><circle cx="17" cy="21" r="2"></circle><circle cx="7" cy="21" r="2"></circle><path d="M17 17H6.93a2 2 0 0 1-1.66-.9l-3.12-4.67A.5.5 0 0 1 2.26 11H17"></path><path d="M9.59 3H17v14"></path></svg>
+            </div>
+            <h3 class="feature-title">Fast & Free Delivery</h3>
+            <p class="feature-description">Free delivery on all orders</p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="feature animate-fade delay-2">
+            <div class="feature-icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+            </div>
+            <h3 class="feature-title">Secure Payment</h3>
+            <p class="feature-description">Free delivery on all orders</p>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="feature animate-fade delay-3">
+            <div class="feature-icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"></path><path d="m3 9 2.45-4.9A2 2 0 0 1 7.24 3h9.52a2 2 0 0 1 1.8 1.1L21 9"></path><path d="M12 3v6"></path></svg>
+            </div>
+            <h3 class="feature-title">Money Back Guarantee</h3>
+            <p class="feature-description">Free delivery on all orders</p>
+          </div>
+          
+          <!-- Feature 4 -->
+          <div class="feature animate-fade delay-4">
+            <div class="feature-icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z"></path><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path></svg>
+            </div>
+            <h3 class="feature-title">Online Support</h3>
+            <p class="feature-description">Free delivery on all orders</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <a href="index.html" class="footer-logo">
+            <div class="logo-box">
+              <span class="logo-text">F<br>U</span>
+              <span class="logo-text">R<br>N</span>
+            </div>
+          </a>
+          
+          <p class="footer-description">
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+          </p>
+          
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"></path></svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-title">Quick Links</h3>
+          
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Image Licensin</a></li>
+            <li><a href="#" class="footer-link">Style Guide</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-title">Shop Category</h3>
+          
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Image Licensin</a></li>
+            <li><a href="#" class="footer-link">Style Guide</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-title">Partners</h3>
+          
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Image Licensin</a></li>
+            <li><a href="#" class="footer-link">Style Guide</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright">Copyright ©2023 All rights reserved | This template is made with ❤ by FURN</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple JavaScript for toggle filter sections
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterToggles = document.querySelectorAll('.filter-toggle');
+      
+      filterToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          const options = this.nextElementSibling;
+          options.classList.toggle('hidden');
+          
+          const arrow = this.querySelector('.arrow-icon');
+          arrow.classList.toggle('rotate');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
